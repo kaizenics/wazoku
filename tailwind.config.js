@@ -8,7 +8,12 @@ module.exports = {
     "./assets/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Poppins', 'sans-serif'],
+        'body': ['Inter', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

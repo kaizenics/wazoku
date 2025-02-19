@@ -29,10 +29,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
     "build": "mix",
-    "start": "vite --watch",
-    "preview": "vite preview",
     "watch": "mix watch"
   },
   "type": "commonjs",
