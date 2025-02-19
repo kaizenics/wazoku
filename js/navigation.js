@@ -134,4 +134,12 @@
 			}
 		});
 	});
+
+	// Add this function after your existing code
+	function toggleDropdown(dropdownId) {
+		const dropdown = document.getElementById(dropdownId);
+		if (dropdown) {
+			dropdown.classList.toggle('hidden');
+		}
+	}
 }() );
