@@ -137,9 +137,12 @@ add_action( 'widgets_init', 'wazoku_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+ // THIS IS IMPORTANT TO ADD IF YOU ARE USING TAILWIND CSS, PLEASE NOTE OF THIS
 function wazoku_scripts() {
     wp_enqueue_style('wazoku-style', get_stylesheet_uri(), array(), _S_VERSION);
     wp_enqueue_style('wazoku-tailwind', get_template_directory_uri() . '/dist/main.css', array(), _S_VERSION);
+    wp_enqueue_style('wazoku-fonts', get_template_directory_uri() . '/assets/css/fonts.css', array(), _S_VERSION);
     wp_enqueue_script('wazoku-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
